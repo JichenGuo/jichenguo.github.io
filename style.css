@@ -54,6 +54,10 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  text-align: justify;
+}
+
 footer {
   text-align: center;
   padding: 20px;
