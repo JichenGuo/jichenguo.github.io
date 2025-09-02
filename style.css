@@ -1,63 +1,112 @@
+/* ----------- 全局基础设置 ----------- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  max-width: 900px;
-  margin: auto;
   line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 30px;
-  background: #f4f4f4;
-}
-
-header .profile-pic {
-  width: 120px;
-  border-radius: 50%;
-}
-
-header h1 {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #007acc;
-}
-
-section {
-  padding: 30px 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-section h2 {
-  color: #2c3e50;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
+  color: #333;
+  background-color: #fafafa;
 }
 
 a {
   color: #007acc;
+  text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
+/* ----------- Header 区域 ----------- */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+  width: 150px;        /* 头像大小，可调 */
+  height: auto;
+  border-radius: 50%;  /* 圆形头像 */
+  display: block;
+  margin: 0 auto 15px; /* 居中，下面加点间距 */
+}
+
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 2.2em;
+  color: #2c3e50;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+nav {
+  margin-top: 15px;
+}
+nav a {
+  margin: 0 12px;
+  font-weight: bold;
+  font-size: 1em;
+}
+nav a:hover {
+  color: #005a99;
+}
+
+/* ----------- Section 通用 ----------- */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+  color: #2c3e50;
+}
+
+section p {
+  text-align: justify;
+}
+
+/* ----------- 列表样式 ----------- */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+/* ----------- 视频 iframe 响应式 ----------- */
+iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ----------- 联系方式 ----------- */
+#contact p {
+  text-align: center;
+  font-size: 1.1em;
+}
+#contact a {
+  margin: 0 8px;
+}
+
+/* ----------- Footer ----------- */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
   background: #f4f4f4;
-  margin-top: 30px;
+  color: #555;
+  border-top: 1px solid #ddd;
 }
